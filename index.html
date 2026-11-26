@@ -2356,9 +2356,9 @@ input,textarea,select{color:#F8F3FF!important}
 <header class="amore-origin-intro-block">
 <p class="amore-origin-kicker">EL PUNTO DE PARTIDA</p>
 <h2>¿Por qué<br/><em>Amore?</em></h2>
-<p class="amore-origin-lead">Los vínculos están presentes en nuestra vida cotidiana, pero hay algo de ellos que no podemos ver: aquello que nos conecta emocionalmente con otras personas.</p>
+<p class="amore-origin-lead">Los vínculos están presentes en nuestra vida cotidiana, pero hay algo de ellos que no podemos ver, aquello que nos conecta emocionalmente con otras personas.</p>
 <p class="amore-origin-copy">A partir de esta inquietud surgió Amore, un proyecto que busca explorar cómo hacer visible lo intangible. Nos propusimos traducir las conexiones humanas en una experiencia sensible, donde la materia, la luz y la interacción permitieran percibir aquello que normalmente permanece invisible.</p>
-<div class="amore-origin-question">¿Y si pudiéramos ver, aunque sea por un instante, aquello que nos une?</div>
+<div class="amore-origin-question">¿Y si pudiéramos ver,  aquello que nos une?</div>
 </header>
 <div class="amore-origin-stage ag-stage" id="ag-1">
 <div class="ag-head"><span class="ag-big" aria-hidden="true">01</span><div><p class="amore-origin-kicker">PRIMERA ETAPA</p><h3>La conexión toma forma</h3><p>Comenzamos explorando la sal como material y construimos una planta de siete pétalos. Esa primera pieza fue el punto de partida para experimentar cómo una forma orgánica podía convertirse en el soporte de una conexión.</p></div></div>
@@ -2479,7 +2479,7 @@ input,textarea,select{color:#F8F3FF!important}
 </div>
 </section>
 <section class="kizuna" id="kizuna">
-<span class="stamp">SEGUNDA ETAPA</span><h2>Del aura al universo</h2><p class="kizuna-intro">Amore no termina, se extiende. Kizuna es una experiencia transmedia con un puente entre mundos para que la gente se vaya metiendo en la historia.</p>
+<span class="stamp">TERCERA ETAPA</span><h2>Del aura al universo</h2><p class="kizuna-intro">Amore no termina, se extiende. Kizuna es una experiencia transmedia con un puente entre mundos para que la gente se vaya metiendo en la historia.</p>
 <div class="kz-cards"><article class="kz-card"><span class="kz-num">01</span><div class="kz-art"><svg viewBox="0 0 120 60" aria-hidden="true"><circle class="a" cx="46" cy="30" r="22"/><circle class="b" cx="74" cy="30" r="22"/><path class="m" d="M60 12.5a22 22 0 0 1 0 35a22 22 0 0 1 0-35z"/></svg></div><h4>El primer encuentro</h4><p>Una luz aparece cuando dos personas se encuentran y comparten una conexión.</p></article><article class="kz-card"><span class="kz-num">02</span><div class="kz-art"><svg viewBox="0 0 120 60" aria-hidden="true" class="kz-door"><path class="light" d="M46 8L112 -2V62L46 52Z"/><path class="frame" d="M28 56V22a18 18 0 0 1 36 0V56"/><path class="panel" d="M31 54V22a15 15 0 0 1 15-15V54Z"/><circle class="dot d1" cx="84" cy="22" r="2"/><circle class="dot d2" cx="96" cy="32" r="2"/><circle class="dot d3" cx="86" cy="42" r="2"/></svg></div><h4>La puerta transmedia</h4><p>Las pistas y señales invitan a descubrir el universo de Kizuna.</p></article><article class="kz-card"><span class="kz-num">03</span><div class="kz-art"><svg viewBox="0 0 120 60" aria-hidden="true"><circle class="r r1" cx="60" cy="30" r="6"/><circle class="r r2" cx="60" cy="30" r="14"/><circle class="r r3" cx="60" cy="30" r="22"/><circle class="r r4" cx="60" cy="30" r="29"/></svg></div><h4>El universo</h4><p>Un espacio donde lo invisible toma forma y los vínculos se hacen presentes.</p></article></div><div class="now"><strong>14 NOV</strong><p>La experiencia inmersiva abrió sus puertas, una ciudad negra, dos personas y un universo que necesitaba ser descubierto.</p></div></section>
 <section class="festival-gallery-section" id="galeria-festival">
 <div aria-hidden="true" class="amore-leaf-overlay amore-leaf-festival-gallery-section"></div>
@@ -2938,6 +2938,15 @@ video{height:auto}
 /* Celulares en horizontal: no forzar alturas de pantalla completa */
 @media(max-height:520px) and (orientation:landscape){
   .amore-plant-hero,.amore-hero-redesign{min-height:0!important}
+}
+</style>
+<style id="transmedia-stack-spacing">
+/* Las imágenes fantasma de arriba (paso anterior) no deben pisar el título 03 / EL ESCÁNER ni la intro */
+#transmedia .transmedia-stack-wrap{position:relative;z-index:1;margin-top:90px!important}
+#transmedia .transmedia-side-left,#transmedia .tm-head{position:relative;z-index:5}
+@media(max-width:760px){
+ section.transmedia-gallery .transmedia-editorial>.transmedia-side-left{position:relative!important;z-index:5!important;margin-bottom:0!important}
+ section.transmedia-gallery .transmedia-editorial>.transmedia-stack-wrap{margin-top:75px!important}
 }
 </style>
 </body>
